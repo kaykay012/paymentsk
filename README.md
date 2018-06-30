@@ -2,30 +2,39 @@ fecshop 支付插件
 ================
 fecshop支付-易极付 国际信用卡支付,支持 Visa, MasterCard, JCB卡种等
 
-Installation
-------------
-
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
-
-Either run
+安装
+-------
 
 ```
-composer require --prefer-dist kaykay012/paymentsk "*"
+composer require --prefer-dist kaykay012/paymentsk 
 ```
 
-or add
+or 在根目录的`composer.json`中添加
 
 ```
 "kaykay012/paymentsk": "*"
+
 ```
 
-to the require section of your `composer.json` file.
+然后执行
 
+```
+composer update
+```
 
-Usage
+配置
 -----
 
-Once the extension is installed, simply use it in your code by  :
+1.配置文件复制
+
+将`vendor\kaykay012\paymentsk\config\fecshop_paymentsk.php` 复制到
+`@common\config\fecshop_third_extensions\fecshop_paymentsk.php`(需要创建该文件)
+
+该文件是扩展的配置文件，通过上面的操作，加入到fecshop的插件配置中.
+
+2.支付配置
+
+在文件 `common\local\local_service\Payment.php` 添加如下代码
 
 ```php
 'paymentConfig' => [
