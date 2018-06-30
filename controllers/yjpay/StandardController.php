@@ -135,8 +135,8 @@ class StandardController extends AppfrontController{
             $html .= "<input type='hidden' name='".$key."' value='".$val."'/>";
         }
         $html .= "<input type='submit' value='ok' style='display:none;''></form>";
-//        echo $html;
-//        exit;
+        echo $html;
+        exit;
         $html .= "<script>document.forms['paymentsubmit'].submit();</script>";
         
         return '支付跳转中...' . $html;
