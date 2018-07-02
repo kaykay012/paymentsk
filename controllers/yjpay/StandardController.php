@@ -45,9 +45,10 @@ class StandardController extends AppfrontController{
      */
     public function actionStart()
     {
-        echo $payment_method = Yii::$service->payment->paypal->standard_payment_method;
-        exit;
-        echo "<pre>";
+//        echo "<pre>";        
+//        echo $payment_method = Yii::$service->payment->paypal->standard_payment_method;
+//        exit;
+
         $currentOrderInfo = $this->currentOrderInfo;
         foreach($currentOrderInfo['products'] as $goods){
             $goodsInfoList[] = array(
@@ -135,8 +136,8 @@ class StandardController extends AppfrontController{
             $html .= "<input type='hidden' name='".$key."' value='".$val."'/>";
         }
         $html .= "<input type='submit' value='ok' style='display:none;''></form>";
-        echo $html;
-        exit;
+//        echo $html;
+//        exit;
         $html .= "<script>document.forms['paymentsubmit'].submit();</script>";
         
         return '支付跳转中...' . $html;
