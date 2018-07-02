@@ -34,7 +34,7 @@ composer update
 
 2.支付配置
 
-在文件 `common\fecshop_local_services\Payment.php` 添加如下代码
+在文件 `@common\fecshop_local_services\Payment.php` 添加如下代码
 
 ```php
 'paymentConfig' => [
