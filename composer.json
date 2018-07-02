@@ -2,8 +2,8 @@
     "name": "kaykay012/paymentsk",
     "description": "fecshop支付-易极付 国际信用卡支付,支持 Visa, MasterCard, JCB卡种等",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","fecshop"],
-    "license": "MIT",
+    "keywords": ["yii2","extension","fecshop", "易极付"],
+    "license": "BSD-3-Clause", 
     "authors": [
         {
             "name": "kai cui",
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "fancyecommerce/fecshop": ">=1.4.3.2"
     },
     "autoload": {
         "psr-4": {
