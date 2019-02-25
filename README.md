@@ -52,8 +52,8 @@ composer update
             'webscr_url'            => 'https://openapi.yijifu.net/gateway.html',
             'success_redirect_url'  => '@homeUrl/payment/success',
             // 账号信息
-            'account'  => '1205248159561118',
-            'signature'=> 'b31fa4aedd67a7f92d882f5e461524bf',
+            'account'  => '12052481595618',
+            'signature'=> 'b31fa4aedd67a7f92d882f5e4614bf',
         ],
 ]
 ```
